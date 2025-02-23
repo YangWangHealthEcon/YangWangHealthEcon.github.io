@@ -1,5 +1,5 @@
-primary_name: "Yang Wang"
-secondary_name: ""
+primary_name: "Yang Wang Academic Website"
+secondary_name: "Yangyang Wang"
 navbar_name: "Yang Wang"
 
 positions:
@@ -9,14 +9,10 @@ positions:
 
 
 email: "ywang406@jhu.edu"
-linkedin: https://www.linkedin.com/in/yang-wang-jhsph/
-# cv_link: link-to-your-cv-file
+linkedin: #our-linked-in-id
+webpage: https://publichealth.jhu.edu/faculty/4431/yang-wang
 gscholar: 5trpYoAAAAJ  # This is an example, replace it with your own Google Scholar ID
 twitter: your_twitter_id  # Do not include the '@' symbol
-# wechat_qrcode: /assets/images/etc/wechat.jpg
-# wechat_prompt: >-
-#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-# linkedin: your-linked-in-id
 # orcid: 0000-0000-0000-0000
 
 short_bio_text_justify: false
