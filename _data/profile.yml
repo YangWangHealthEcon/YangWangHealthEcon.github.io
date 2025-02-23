@@ -16,9 +16,9 @@ twitter: your_twitter_id  # Do not include the '@' symbol
 # orcid: 0000-0000-0000-0000
 
 short_bio:
-I am an assistant research professor at the Johns Hopkins Bloomberg School of Public Health. <br>
-I conduct health economics and policy research, including healthcare pricing, hospital finance, health insurance market, and pharmaceutical drug pricing. <br>
-My research aims to inform policymaking that reduces healthcare spending and promotes care access.
+  I am an assistant research professor at the Johns Hopkins Bloomberg School of Public Health. <br>
+  I conduct health economics and policy research, including healthcare pricing, hospital finance, health insurance market, and pharmaceutical drug pricing. <br>
+  My research aims to inform policymaking that reduces healthcare spending and promotes care access.
 
 portrait_url: /assets/images/photos/portrait.jpg
 portrait_caption: >-
