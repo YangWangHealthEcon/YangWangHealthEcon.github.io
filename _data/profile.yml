@@ -2,8 +2,7 @@ primary_name: "Yang Wang"
 navbar_name: "Yang Wang"
 
 positions:
-- logo: /assets/images/badges/JHU.logo_vertical.blue.jpg
-  name: Ph.D, Assistant Research Professor at the Johns Hopkins Bloomberg School of Public Health
+- name: Ph.D, Assistant Research Professor at the Johns Hopkins Bloomberg School of Public Health
 
 email: "ywang406@jhu.edu"
 url: "https://publichealth.jhu.edu/faculty/4431/yang-wang"    
@@ -23,12 +22,10 @@ education:
 - name: Johns Hopkins University 
   logo: /assets/images/badges/JHU.logo_vertical.blue.jpg
   position: 
-    Department of Health Policy and Management <br/>
-    PhD in Health Economics and Policy  
+    Department of Health Policy and Management PhD in Health Economics and Policy  
   date: 2017 - 2022
 - name: University of North Carolina at Chapel Hill  
   date: 2010 - 2014
   logo: /assets/images/badges/PKU_red.png
   position: 
-    BS in Mathematical Decision Sciences (Statistics), 2nd major in Mathematics <br/>
-    Graduated with Honor and Distinction 
+    BS in Mathematical Decision Sciences (Statistics), 2nd major in Mathematics 
