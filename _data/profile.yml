@@ -19,10 +19,9 @@ short_bio:
 portrait_url: /assets/images/hart0395.jpg
 
 education:
-- name: Johns Hopkins University 
+- position: PhD in Health Economics and Policy  
+  name: Johns Hopkins University 
   logo: /assets/images/badges/JHU.logo_vertical.blue.jpg
-  position: 
-    Department of Health Policy and Management PhD in Health Economics and Policy  
   date: 2017 - 2022
 - name: University of North Carolina at Chapel Hill  
   date: 2010 - 2014
