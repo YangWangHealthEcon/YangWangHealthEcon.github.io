@@ -1,4 +1,4 @@
-primary_name: "Yang Wang"
+primary_name: "Yang Wang, PhD"
 navbar_name: "Yang Wang"
 
 positions:
@@ -8,14 +8,16 @@ positions:
     Johns Hopkins Bloomberg School of Public Health
 
 short_bio:
-  I am an assistant research professor at the Johns Hopkins Bloomberg School of Public Health. <br>
-  I conduct health economics and policy research, including healthcare pricing, hospital finance, health insurance market, and pharmaceutical drug pricing. <br>
-  My research aims to inform policymaking that reduces healthcare spending and promotes care access.
+  Dr. Wang is a health economist and faculty at Johns Hopkins University School of Public Health. <br>
+  He conducts empirical research on healthcare pricing, health insurance market, and hospital finance in the US. <br>
+  He is a leading expert on leveraging the hospital and payer disclosed price transparency data to examine the pricing dynamics of health services, <br>
+  identify factors that drive higher health expenditures, <br>
+  and evaluate policy interventions and industry practices designed to contain spending and promote care access.
 
 email: "ywang406@jhu.edu"
 facultypage: "https://publichealth.jhu.edu/faculty/4431/yang-wang"    
-linkedin: 
-gscholar: Uc80GVcAAAAJ  # This is an example, replace it with your own Google Scholar ID
+linkedin: "www.linkedin.com/in/yang-wang-jhsph"
+gscholar: 5trpYoAAAAJ  # This is an example, replace it with your own Google Scholar ID
 twitter: your_twitter_id  # Do not include the '@' symbol
 
 portrait_url: /assets/images/hart0395.jpg
