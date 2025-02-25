@@ -15,6 +15,6 @@ authors:
   - Peter Cram
   - Ge Bai
 links:
-  Code: assets/wang_2023_ld_230100_1686863299.48618.pdf
+  Paper: assets/wang_2023_ld_230100_1686863299.48618.pdf
  
 ---
