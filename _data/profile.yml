@@ -20,11 +20,9 @@ portrait_url: /assets/images/hart0395.jpg
 
 education:
 - position: PhD in Health Economics and Policy  
-  name: Johns Hopkins University 
-  logo: /assets/images/badges/JHU.logo_vertical.blue.jpg
+  name: Johns Hopkins University   
   date: 2017 - 2022
-- name: University of North Carolina at Chapel Hill  
+- position: BS in Mathematical Decision Sciences (Statistics), 2nd major in Mathematics  
+  name: University of North Carolina at Chapel Hill  
   date: 2010 - 2014
-  logo: /assets/images/badges/PKU_red.png
-  position: 
-    BS in Mathematical Decision Sciences (Statistics), 2nd major in Mathematics 
+  
