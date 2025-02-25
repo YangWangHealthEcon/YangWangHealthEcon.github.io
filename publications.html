@@ -5,7 +5,8 @@ navbar_title: Publications
 body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
-
+{% assign all_pubs = site.posts | where_exp: "post", "post.title == 'Publications'" %}
+{% assign pubs = all_pubs[0].content | split: "\n" %}
 {% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
 <div class="row">
