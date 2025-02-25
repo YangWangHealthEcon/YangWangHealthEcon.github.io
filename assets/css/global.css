@@ -68,3 +68,8 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
+.education-title {
+    font-size: 1.5rem;  /* Adjust size as needed */
+    font-weight: bold;
+}
+
