@@ -13,5 +13,5 @@ authors:
   - Ge Bai
   - Renee Y. Hsia
 links:
-  Paper: assets/publications/2024_Emergency Department Trauma Activation Fees.pdf
+  Paper: assets/publications/2024_EmergencyDepartmentTraumaActivationFees byPayerType.pdf
 ---
