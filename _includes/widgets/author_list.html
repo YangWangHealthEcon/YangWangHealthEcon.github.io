@@ -38,9 +38,7 @@
         <span class="text-body">{{ display_name }}</span>
     {%- endif -%}
 
-    {%- if forloop.index < total_authors -%}
-        , 
-    {%- endif -%} <!-- Add a comma only if it's not the last author -->
+    {%- if forloop.last == false -%}, {% endif -%} <!-- Add a comma only if it's not the last author -->
 {%- endfor -%}
 
 {%- if has_eq_contrib or has_corresponding %}
