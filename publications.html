@@ -17,7 +17,6 @@ body_attr: >-
         {% assign num_papers = year.items | size %}
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
-            {% for pub in year.items %}
                 {% for item in year.items %}
                    {% include widgets/publication_item.html item=item %}
                 {% endfor %}
