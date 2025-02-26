@@ -12,5 +12,5 @@ authors:
   - Jianhui Xu
   - Mark K. Meiselbach
 links:
-  Paper: assets/publications/2024_Commercial Insurers' Market Power and Hospital Prices.pdf
+  Paper: assets/publications/2024_Commercial insurers' market power and hospital prices in Medicaid managed care.pdf
 ---
