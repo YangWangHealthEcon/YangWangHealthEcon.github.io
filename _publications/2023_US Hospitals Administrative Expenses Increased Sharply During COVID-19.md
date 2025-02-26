@@ -10,6 +10,5 @@ authors:
   - Ge Bai
   - Gerard Anderson
 links:
-  Paper: assets/publications/2023_U.S. Hospitals' Administrative Expenses Increased Sharply During COVID-19.pdf
- 
+  Paper: assets/publications/2023_US Hospitals Administrative Expenses Increased Sharply During COVID-19.pdf
 ---
