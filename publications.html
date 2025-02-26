@@ -5,22 +5,25 @@ navbar_title: Publications
 body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
-{% assign all_pubs = site.posts | where_exp: "post", "post.title == 'Publications'" %}
-{% assign pubs = all_pubs[0].content | split: "\n" %}
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+
+{% assign pubs_by_year = site.data.publications | group_by_exp: "pub", "pub.year" | sort: "name" | reverse %}
+
 
 <div class="row">
     <div class="col-12 col-lg-10">
         {% for year in pubs_by_year %}
-        {% assign num_papers = year.items | size %}
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
-            {% for item in year.items %}
-                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% for pub in year.items %}
+                <h3>{{ pub.title }}</h3>
+                <p><strong>{{ pub.authors }}</strong><br>
+                {{ pub.venue }}<br>
+                <a href="{{ pub.link }}">[Read More]</a></p>
             {% endfor %}
         </div>
         {% endfor %}
     </div>
+
 
     <div class="col-2 d-none d-lg-block">
         <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
