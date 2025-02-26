@@ -6,7 +6,9 @@ body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
 
-{% assign pubs_by_year = site.data.publications | group_by_exp: "pub", "pub.year" | sort: "name" | reverse %}
+{% assign pubs_by_year = site.data.publications | group_by_exp: "pub", "pub.year" %}
+{% assign sorted_pubs_by_year = pubs_by_year | sort: "name" | reverse %}
+
 
 
 <div class="row">
