@@ -11,6 +11,7 @@ authors:
   - John S. Cox
   - Gerard F. Anderson
   - Ge Bai
-paper: "assets/publications/2025_Healthcare Price Transparency - Research Findings and Implications for Policy and Practice.pdf"
+links: 
+  Paper: assets/publications/2025_Healthcare Price Transparency - Research Findings and Implications for Policy and Practice.pdf
 
 ---
