@@ -1,1 +1,9 @@
+- title: "Paper Title 1"
+  authors: "Author 1, Author 2"
+  venue: "Conference Name, Year"
+  link: "https://example.com"
 
+- title: "Paper Title 2"
+  authors: "Author 1, Author 2"
+  venue: "Journal Name, Year"
+  link: "https://example.com"
