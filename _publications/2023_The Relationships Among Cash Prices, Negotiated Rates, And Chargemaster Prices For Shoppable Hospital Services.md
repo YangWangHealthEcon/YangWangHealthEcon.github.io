@@ -12,6 +12,6 @@ authors:
   - Gerard F. Anderson
   - Ge Bai
 links: 
-  Paper: assets/publications/The Relationships Among Cash Prices, Negotiated Rates, And Chargemaster Prices For Shoppable Hospital Services.pdf
+  Paper: assets/publications/2023_The Relationships Among Cash Prices, Negotiated Rates, And Chargemaster Prices For Shoppable Hospital Services.pdf
 
 ---
