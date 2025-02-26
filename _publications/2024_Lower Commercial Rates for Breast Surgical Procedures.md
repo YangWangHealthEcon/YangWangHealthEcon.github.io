@@ -17,5 +17,5 @@ authors:
   - Jonas A. Nelson
   - Evan Matros
 links:
-  Paper: assets/publications/Lower Commercial Rates for Breast Surgical Procedures.pdf
+  Paper: assets/publications/2024_Lower Commercial Rates for Breast Surgical Procedures.pdf
 ---
