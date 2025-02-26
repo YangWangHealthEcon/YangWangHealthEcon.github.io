@@ -12,5 +12,5 @@ authors:
   - Mariana P. Socal
   - Stacie B. Dusetzina
 links:
-  Paper: assets/publications/2024_Manufacturer-sponsored Drug Coupon Use.pdf
+  Paper: assets/publications/2024_Manufacturer-sponsored-drug-coupon-use.pdf
 ---
