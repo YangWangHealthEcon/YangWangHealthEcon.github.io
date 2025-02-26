@@ -1,4 +1,4 @@
-{%- assign authors = include.authors -%}
+{%- assign authors = include.authors | split: ", " -%}
 {%- assign has_eq_contrib = false -%}
 {%- assign has_corresponding = false -%}
 {%- assign total_authors = authors.size -%}
@@ -31,14 +31,16 @@
     {%- else -%}
         {%- assign display_name = name | append: mark -%}
     {%- endif -%}
-    
+
     {%- if info['url'] -%}
         <a class="text-body" target="_blank" href="{{ info['url'] }}">{{ display_name }}</a>
     {%- else -%}
         <span class="text-body">{{ display_name }}</span>
     {%- endif -%}
 
-    {%- if forloop.index < total_authors -%}, {% endif -%}  <!-- This adds a comma if it's not the last author -->
+    {%- if forloop.index < total_authors -%}
+        , 
+    {%- endif -%} <!-- Add a comma only if it's not the last author -->
 {%- endfor -%}
 
 {%- if has_eq_contrib or has_corresponding %}
