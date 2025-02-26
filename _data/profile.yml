@@ -22,8 +22,8 @@ portrait_url: /assets/images/hart0395.jpg
 education:
 - position: PhD in Health Economics and Policy  
   name: Johns Hopkins University   
-  date: 2017 - 2022
+# date: 2017 - 2022
 - position: BS in Mathematical Decision Sciences (Statistics), 2nd major in Mathematics  
   name: University of North Carolina at Chapel Hill  
-  date: 2010 - 2014
+#  date: 2010 - 2014
   
