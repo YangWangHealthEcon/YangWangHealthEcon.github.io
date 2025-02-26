@@ -10,4 +10,6 @@ authors:
   - Mark Meiselbach
   - Gerard F. Anderson
   - Ge Bai
+links:
+  Paper: assets/publications/2023_Hospital Pricing Information Consistent Between TIC Data And Commercial.pdf
 ---
