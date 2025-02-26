@@ -37,8 +37,13 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
- 
 collections:
-  - publications
-  - news
+  publications:
+    output: true
+  news:
+    output: true
+ 
+# collections:
+#  - publications
+#  - news
  
