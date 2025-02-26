@@ -32,13 +32,12 @@
     {%- endif -%}
     
     {%- if info['url'] -%}
-        <a class="text-body" target="_blank" href="{{ info['url'] }}">{{ display_name }}</a>{%- if forloop.index < authors.size -%}, {% endif -%}
+        <a class="text-body" target="_blank" href="{{ info['url'] }}">{{ display_name }}</a>
     {%- else -%}
-        <span class="text-body">
-            {{ display_name }}{%- if forloop.index < authors.size -%}, {% endif -%}
-        </span>
+        <span class="text-body">{{ display_name }}</span>
     {%- endif -%}
 
+    {%- if forloop.index < authors.size -%}, {% endif -%}  <!-- This comma is added between authors -->
 {%- endfor -%}
 
 {%- if has_eq_contrib or has_corresponding %}
