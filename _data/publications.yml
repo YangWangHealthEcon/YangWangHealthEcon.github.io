@@ -1,108 +1,107 @@
+- title: "Healthcare Price Transparency: Research Findings and Implications for Policy and Practice"
+  authors: "Yang Wang, Christopher M. Whaley, Ge Bai"
+  venue: "Journal of General Internal Medicine"
+  year: 2025
+  link: "assets/publications/2025_Healthcare Price Transparency - Research Findings and Implications for Policy and Practice.pdf"
 
-  - title: "Healthcare Price Transparency: Research Findings and Implications for Policy and Practice"
-    authors: "Wang Y, Whaley CM, Bai G"
-    venue: "J Gen Intern Med"
-    year: 2025
-    link: "assets/publications/2025_Healthcare Price Transparency - Research Findings and Implications for Policy and Practice.pdf" # Add the actual URL
+- title: "Lower Commercial Rates for Breast Surgical Procedures are Associated with Socioeconomic Disadvantage: A Transparency in Coverage Analysis"
+  authors: "Rochlin DH, Yang Wang, Amakiri UO"
+  venue: "Annals of Surgical Oncology"
+  year: 2024
+  link: "assets/publications/Lower Commercial Rates for Breast Surgical Procedures.pdf"
 
-  - title: "Lower Commercial Rates for Breast Surgical Procedures are Associated with Socioeconomic Disadvantage: A Transparency in Coverage Analysis"
-    authors: "Rochlin DH, Wang Y, Amakiri UO, et al."
-    venue: "Ann Surg Oncol"
-    year: 2024
-    link: "URL_here" # Add the actual URL
+- title: "Within-Hospital Price Gaps Across National Insurers"
+  authors: "Yang Wang, Jianhui Xu, Gerard Anderson"
+  venue: "JAMA Network Open"
+  year: 2024
+  link: "assets/publications/Within-Hospital Price Gaps Across National Insurers.pdf"
 
-  - title: "Within-Hospital Price Gaps Across National Insurers"
-    authors: "Wang Y, Xu J, Anderson G"
-    venue: "JAMA Netw Open"
-    year: 2024
-    link: "URL_here" # Add the actual URL
+- title: "Commercial Insurers' Market Power and Hospital Prices in Medicaid Managed Care"
+  authors: "Yang Wang, Jeffrey Marr, Jianhui Xu, Mark K. Meiselbach"
+  venue: "Health Services Research"
+  year: 2024
+  link: "assets/publications/Commercial Insurers' Market Power and Hospital Prices.pdf"
 
-  - title: "Commercial Insurers' Market Power and Hospital Prices in Medicaid Managed Care"
-    authors: "Wang Y, Marr J, Xu J, Meiselbach MK"
-    venue: "Health Serv Res"
-    year: 2024
-    link: "URL_here" # Add the actual URL
+- title: "Manufacturer-sponsored Drug Coupon Use and Drug-switching Behavior Among Patients with Type 2 Diabetes"
+  authors: "Yang Wang, Kang SY, Socal MP, Dusetzina SB"
+  venue: "Journal of Managed Care & Specialty Pharmacy"
+  year: 2024
+  link: "assets/publications/Manufacturer-sponsored Drug Coupon Use.pdf"
 
-  - title: "Manufacturer-sponsored Drug Coupon Use and Drug-switching Behavior Among Patients with Type 2 Diabetes"
-    authors: "Wang Y, Kang SY, Socal MP, Dusetzina SB"
-    venue: "J Manag Care Spec Pharm"
-    year: 2024
-    link: "URL_here" # Add the actual URL
+- title: "Emergency Department Trauma Activation Fees by Payer Type"
+  authors: "Yang Wang, Liu V, Yang Wang, Ge Bai, Hsia RY"
+  venue: "JAMA Surgery"
+  year: 2024
+  link: "assets/publications/Emergency Department Trauma Activation Fees.pdf"
 
-  - title: "Emergency Department Trauma Activation Fees by Payer Type"
-    authors: "Wang Y, Liu V, Wang Y, Bai G, Hsia RY"
-    venue: "JAMA Surg"
-    year: 2024
-    link: "URL_here" # Add the actual URL
+- title: "Enrollment Trends In Self-Funded Employer-Sponsored Insurance, 2015 And 2021"
+  authors: "Mark K. Meiselbach, Jeffrey Marr, Yang Wang"
+  venue: "Health Affairs (Millwood)"
+  year: 2024
+  link: "assets/publications/Enrollment Trends In Self-Funded Employer-Sponsored Insurance.pdf"
 
-  - title: "Enrollment Trends In Self-Funded Employer-Sponsored Insurance, 2015 And 2021"
-    authors: "Meiselbach MK, Marr J, Wang Y"
-    venue: "Health Aff (Millwood)"
-    year: 2024
-    link: "URL_here" # Add the actual URL
+- title: "Do Insurers with Greater Market Power Negotiate Consistently Lower Prices for Hospital Care? Evidence from Hospital Price Transparency Data"
+  authors: "Yang Wang, Mark K. Meiselbach, Jianhui Xu, Ge Bai, Gerard Anderson"
+  venue: "Medical Care Research and Review"
+  year: 2024
+  link: "assets/publications/Do Insurers with Greater Market Power.pdf"
 
-  - title: "Do Insurers with Greater Market Power Negotiate Consistently Lower Prices for Hospital Care? Evidence from Hospital Price Transparency Data"
-    authors: "Wang Y, Meiselbach MK, Xu J, Bai G, Anderson G"
-    venue: "Medical Care Research and Review"
-    year: 2024
-    link: "URL_here" # Add the actual URL
+- title: "Facility Fees for Colonoscopy Procedures at Hospitals and Ambulatory Surgery Centers"
+  authors: "Yang Wang, Yang Wang, Plummer E, Chernew ME, Gerard Anderson, Ge Bai"
+  venue: "JAMA Health Forum"
+  year: 2023
+  link: "assets/publications/Facility Fees for Colonoscopy Procedures.pdf"
 
-  - title: "Facility Fees for Colonoscopy Procedures at Hospitals and Ambulatory Surgery Centers"
-    authors: "Wang Y, Wang Y, Plummer E, Chernew ME, Anderson G, Bai G"
-    venue: "JAMA Health Forum"
-    year: 2023
-    link: "URL_here" # Add the actual URL
+- title: "Hospital Prices in Medicaid Managed Care"
+  authors: "Jeffrey Marr, Yang Wang, Jianhui Xu, Ge Bai, Gerard Anderson, Mark K. Meiselbach"
+  venue: "JAMA Network Open"
+  year: 2023
+  link: "assets/publications/Hospital Prices in Medicaid Managed Care.pdf"
 
-  - title: "Hospital Prices in Medicaid Managed Care"
-    authors: "Marr J, Wang Y, Xu J, Bai G, Anderson G, Meiselbach MK"
-    venue: "JAMA Netw Open"
-    year: 2023
-    link: "URL_here" # Add the actual URL
+- title: "Hospital Prices For Commercial Plans Are Twice Those For Medicare Advantage Plans When Negotiated By The Same Insurer"
+  authors: "Mark K. Meiselbach, Yang Wang, Jianhui Xu, Ge Bai, Gerard Anderson"
+  venue: "Health Affairs (Millwood)"
+  year: 2023
+  link: "assets/publications/Hospital Prices For Commercial Plans.pdf"
 
-  - title: "Hospital Prices For Commercial Plans Are Twice Those For Medicare Advantage Plans When Negotiated By The Same Insurer"
-    authors: "Meiselbach MK, Wang Y, Xu J, Bai G, Anderson GF"
-    venue: "Health Aff (Millwood)"
-    year: 2023
-    link: "URL_here" # Add the actual URL
+- title: "Comparison of Commercial Negotiated Price and Cash Price Between Physician-Owned Hospitals and Other Hospitals in the Same Hospital Referral Region"
+  authors: "Yang Wang, Plummer E, Yang Wang, Cram P, Ge Bai"
+  venue: "JAMA Network Open"
+  year: 2023
+  link: "assets/publications/Comparison of Commercial Negotiated Price.pdf"
 
-  - title: "Comparison of Commercial Negotiated Price and Cash Price Between Physician-Owned Hospitals and Other Hospitals in the Same Hospital Referral Region"
-    authors: "Wang Y, Plummer E, Wang Y, Cram P, Bai G"
-    venue: "JAMA Netw Open"
-    year: 2023
-    link: "URL_here" # Add the actual URL
+- title: "The Relationships among Cash Prices, Negotiated Rates, and Chargemaster Prices for Shoppable Hospital Services"
+  authors: "Yang Wang, Mark K. Meiselbach, Cox JS, Gerard Anderson, Ge Bai"
+  venue: "Health Affairs (Millwood)"
+  year: 2023
+  link: "assets/publications/The Relationships among Cash Prices.pdf"
 
-  - title: "The Relationships among Cash Prices, Negotiated Rates, and Chargemaster Prices for Shoppable Hospital Services"
-    authors: "Wang Y, Meiselbach MK, Cox JS, Anderson GF, Bai G"
-    venue: "Health Aff (Millwood)"
-    year: 2023
-    link: "URL_here" # Add the actual URL
+- title: "U.S. Hospitals' Administrative Expenses Increased Sharply During COVID-19"
+  authors: "Yang Wang, Ge Bai, Gerard Anderson"
+  venue: "Journal of General Internal Medicine"
+  year: 2023
+  link: "assets/publications/U.S. Hospitals' Administrative Expenses Increased Sharply.pdf"
 
-  - title: "U.S. Hospitals' Administrative Expenses Increased Sharply During COVID-19"
-    authors: "Wang Y, Bai G, Anderson G"
-    venue: "J Gen Intern Med"
-    year: 2023
-    link: "URL_here" # Add the actual URL
+- title: "COVID-19 and Hospital Financial Viability in the US"
+  authors: "Yang Wang, Ge Bai, Gerard Anderson"
+  venue: "JAMA Health Forum"
+  year: 2022
+  link: "assets/publications/COVID-19 and Hospital Financial Viability.pdf"
 
-  - title: "COVID-19 and Hospital Financial Viability in the US"
-    authors: "Wang Y, Bai G, Anderson G"
-    venue: "JAMA Health Forum"
-    year: 2022
-    link: "URL_here" # Add the actual URL
+- title: "The Commissions Paid to Brokers for Fully Insured Health Insurance Plans"
+  authors: "Ge Bai, Park A, Yang Wang, Overton HN, Bruhn WE, Makary MA"
+  venue: "Medical Care Research and Review"
+  year: 2022
+  link: "assets/publications/The Commissions Paid to Brokers.pdf"
 
-  - title: "The Commissions Paid to Brokers for Fully Insured Health Insurance Plans"
-    authors: "Bai G, Park A, Wang Y, Overton HN, Bruhn WE, Makary MA"
-    venue: "Medical Care Research and Review"
-    year: 2022
-    link: "URL_here" # Add the actual URL
+- title: "Hospital Resource Allocation Decisions When Market Prices Exceed Medicare Prices"
+  authors: "Yang Wang, Gerard Anderson"
+  venue: "Health Services Research"
+  year: 2022
+  link: "assets/publications/Hospital Resource Allocation Decisions.pdf"
 
-  - title: "Hospital Resource Allocation Decisions When Market Prices Exceed Medicare Prices"
-    authors: "Wang Y, Anderson G"
-    venue: "Health Serv Res"
-    year: 2022
-    link: "URL_here" # Add the actual URL
-
-  - title: "Frequency and Cost of Out-of-Network Bills for Laboratory Services among Privately-Insured Patients"
-    authors: "Sen AP, Meiselbach MK, Wang Y, Eisenberg M, Anderson GF"
-    venue: "JAMA Internal Medicine"
-    year: 2021
-    link: "URL_here" # Add the actual URL
+- title: "Frequency and Cost of Out-of-Network Bills for Laboratory Services among Privately-Insured Patients"
+  authors: "Sen AP, Mark K. Meiselbach, Yang Wang, Eisenberg M, Gerard Anderson"
+  venue: "JAMA Internal Medicine"
+  year: 2021
+  link: "assets/publications/Frequency and Cost of Out-of-Network Bills.pdf"
