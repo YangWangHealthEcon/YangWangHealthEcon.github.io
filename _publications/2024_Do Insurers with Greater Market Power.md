@@ -13,5 +13,5 @@ authors:
   - Ge Bai
   - Gerard F. Anderson
 links:
-  Paper: assets/publications/2024_Do Insurers with Greater Market Power.pdf
+  Paper: assets/publications/2024_Do Insurers With Greater Market Power Negotiate Consistently Lower Prices for Hospital Care.pdf
 ---
