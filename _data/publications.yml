@@ -1,11 +1,108 @@
-- title: "Paper Title 1"
-  authors: "Author 1, Author 2"
-  venue: "Conference Name"
-  year: 2024
-  link: "https://example.com"
 
-- title: "Paper Title 2"
-  authors: "Author 1, Author 2"
-  venue: "Journal Name"
-  year: 2023
-  link: "https://example.com"
+  - title: "Healthcare Price Transparency: Research Findings and Implications for Policy and Practice"
+    authors: "Wang Y, Whaley CM, Bai G"
+    venue: "J Gen Intern Med"
+    year: 2025
+    link: "URL_here" # Add the actual URL
+
+  - title: "Lower Commercial Rates for Breast Surgical Procedures are Associated with Socioeconomic Disadvantage: A Transparency in Coverage Analysis"
+    authors: "Rochlin DH, Wang Y, Amakiri UO, et al."
+    venue: "Ann Surg Oncol"
+    year: 2024
+    link: "URL_here" # Add the actual URL
+
+  - title: "Within-Hospital Price Gaps Across National Insurers"
+    authors: "Wang Y, Xu J, Anderson G"
+    venue: "JAMA Netw Open"
+    year: 2024
+    link: "URL_here" # Add the actual URL
+
+  - title: "Commercial Insurers' Market Power and Hospital Prices in Medicaid Managed Care"
+    authors: "Wang Y, Marr J, Xu J, Meiselbach MK"
+    venue: "Health Serv Res"
+    year: 2024
+    link: "URL_here" # Add the actual URL
+
+  - title: "Manufacturer-sponsored Drug Coupon Use and Drug-switching Behavior Among Patients with Type 2 Diabetes"
+    authors: "Wang Y, Kang SY, Socal MP, Dusetzina SB"
+    venue: "J Manag Care Spec Pharm"
+    year: 2024
+    link: "URL_here" # Add the actual URL
+
+  - title: "Emergency Department Trauma Activation Fees by Payer Type"
+    authors: "Wang Y, Liu V, Wang Y, Bai G, Hsia RY"
+    venue: "JAMA Surg"
+    year: 2024
+    link: "URL_here" # Add the actual URL
+
+  - title: "Enrollment Trends In Self-Funded Employer-Sponsored Insurance, 2015 And 2021"
+    authors: "Meiselbach MK, Marr J, Wang Y"
+    venue: "Health Aff (Millwood)"
+    year: 2024
+    link: "URL_here" # Add the actual URL
+
+  - title: "Do Insurers with Greater Market Power Negotiate Consistently Lower Prices for Hospital Care? Evidence from Hospital Price Transparency Data"
+    authors: "Wang Y, Meiselbach MK, Xu J, Bai G, Anderson G"
+    venue: "Medical Care Research and Review"
+    year: 2024
+    link: "URL_here" # Add the actual URL
+
+  - title: "Facility Fees for Colonoscopy Procedures at Hospitals and Ambulatory Surgery Centers"
+    authors: "Wang Y, Wang Y, Plummer E, Chernew ME, Anderson G, Bai G"
+    venue: "JAMA Health Forum"
+    year: 2023
+    link: "URL_here" # Add the actual URL
+
+  - title: "Hospital Prices in Medicaid Managed Care"
+    authors: "Marr J, Wang Y, Xu J, Bai G, Anderson G, Meiselbach MK"
+    venue: "JAMA Netw Open"
+    year: 2023
+    link: "URL_here" # Add the actual URL
+
+  - title: "Hospital Prices For Commercial Plans Are Twice Those For Medicare Advantage Plans When Negotiated By The Same Insurer"
+    authors: "Meiselbach MK, Wang Y, Xu J, Bai G, Anderson GF"
+    venue: "Health Aff (Millwood)"
+    year: 2023
+    link: "URL_here" # Add the actual URL
+
+  - title: "Comparison of Commercial Negotiated Price and Cash Price Between Physician-Owned Hospitals and Other Hospitals in the Same Hospital Referral Region"
+    authors: "Wang Y, Plummer E, Wang Y, Cram P, Bai G"
+    venue: "JAMA Netw Open"
+    year: 2023
+    link: "URL_here" # Add the actual URL
+
+  - title: "The Relationships among Cash Prices, Negotiated Rates, and Chargemaster Prices for Shoppable Hospital Services"
+    authors: "Wang Y, Meiselbach MK, Cox JS, Anderson GF, Bai G"
+    venue: "Health Aff (Millwood)"
+    year: 2023
+    link: "URL_here" # Add the actual URL
+
+  - title: "U.S. Hospitals' Administrative Expenses Increased Sharply During COVID-19"
+    authors: "Wang Y, Bai G, Anderson G"
+    venue: "J Gen Intern Med"
+    year: 2023
+    link: "URL_here" # Add the actual URL
+
+  - title: "COVID-19 and Hospital Financial Viability in the US"
+    authors: "Wang Y, Bai G, Anderson G"
+    venue: "JAMA Health Forum"
+    year: 2022
+    link: "URL_here" # Add the actual URL
+
+  - title: "The Commissions Paid to Brokers for Fully Insured Health Insurance Plans"
+    authors: "Bai G, Park A, Wang Y, Overton HN, Bruhn WE, Makary MA"
+    venue: "Medical Care Research and Review"
+    year: 2022
+    link: "URL_here" # Add the actual URL
+
+  - title: "Hospital Resource Allocation Decisions When Market Prices Exceed Medicare Prices"
+    authors: "Wang Y, Anderson G"
+    venue: "Health Serv Res"
+    year: 2022
+    link: "URL_here" # Add the actual URL
+
+  - title: "Frequency and Cost of Out-of-Network Bills for Laboratory Services among Privately-Insured Patients"
+    authors: "Sen AP, Meiselbach MK, Wang Y, Eisenberg M, Anderson GF"
+    venue: "JAMA Internal Medicine"
+    year: 2021
+    link: "URL_here" # Add the actual URL
