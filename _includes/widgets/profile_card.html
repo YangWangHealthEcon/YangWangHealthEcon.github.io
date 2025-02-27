@@ -61,17 +61,12 @@
                         </a>
                         {% endif %}
                         
-                        {% if site.data.profile.gscholar %}
-                        {%- if site.data.profile.gscholar contains 'scholar.google' -%}
-                        {%- assign gscholar_url = site.data.profile.gscholar -%}
-                        {%- else -%}
-                        {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
-                        {%- endif -%}
-                        <a class="pr-3 no-break" target="_blank" href="{{ gscholar_url }}">
+                        {% if site.data.profile.gscholar contains 'scholar.google' %}
+                        <a class="pr-3 no-break" target="_blank" rel="noopener noreferrer" href="{{ site.data.profile.gscholar }}">
                             <i class="fas fa-graduation-cap"></i> Google Scholar
                         </a>
                         {% endif %}
-
+                        
                         {% if site.data.profile.linkedin %}
                         <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.linkedin }}">
                             <i class="fab fa-linkedin"></i> LinkedIn
