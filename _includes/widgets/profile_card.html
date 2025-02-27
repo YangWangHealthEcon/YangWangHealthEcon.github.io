@@ -50,9 +50,9 @@
                 <hr />
                 <div class="row">
                     <div class="col">
-                        
+                        {% if site.data.profile.email %}
                         <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}" aria-label="Send an email">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope"></i> Email
                         </a>
 
                         {% if site.data.profile.facultypage %}
