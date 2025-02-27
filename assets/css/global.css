@@ -73,11 +73,4 @@ div.lazy {
     font-weight: bold;
 }
 
-<!--added 2.27-->
-.news-media {
-    width: 40px; /* Adjust as needed */
-    height: 40px;
-    object-fit: cover;
-    border-radius: 5px; /* Optional rounded corners */
-}
 
