@@ -2,7 +2,7 @@
 
 title: "Emergency Department Trauma Activation Fees by Payer Type"
 date: 2024-01-01
-selected: true
+selected: false
 pub: "JAMA Surgery"
 pub_date: "2024"
 
