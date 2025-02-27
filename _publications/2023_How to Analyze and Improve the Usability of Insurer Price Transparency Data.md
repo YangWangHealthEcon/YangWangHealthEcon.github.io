@@ -1,7 +1,7 @@
 ---
 title: "How to Analyze and Improve the Usability of Insurer Price Transparency Data?"
 date: 2023-01-01
-selected: true
+selected: false
 pub: "Health Affairs Forefront"
 pub_date: "2023"
 
