@@ -12,7 +12,8 @@
                 <div class="my-1 d-flex align-items-center">         
                    <div class="d-flex flex-column">
                        <span>{{ item.title }}</span> 
-                       <a href="{{ item.url }}" class="text-muted ml-1" target="_blank" rel="noopener noreferrer">
+                       <a href="{% if item.url contains 'http' %}{{ item.url }}{% else %}/404.html{% endif %}" 
+                           class="text-muted ml-1" target="_blank" rel="noopener noreferrer">
                           <i class="fas fa-link"></i>
                        </a>
                        <p>{{ item.url }}</p>
