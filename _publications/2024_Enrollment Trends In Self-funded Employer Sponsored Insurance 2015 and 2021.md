@@ -2,7 +2,7 @@
 
 title: "Enrollment Trends In Self-Funded Employer-Sponsored Insurance, 2015 And 2021"
 date: 2024-01-01
-selected: true
+selected: false
 pub: "Health Affairs (Millwood)"
 pub_date: "2024"
 
