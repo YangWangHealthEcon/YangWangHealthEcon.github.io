@@ -10,8 +10,10 @@ navbar_title: Home
 {% if site.data.display.homepage.show_news %}
     {% assign count_news = site.news | size %}
     {% if count_news > 0 %}
-        title = '<i class="fas fa-newspaper"></i>Media Coverage' <!-- Updated section heading -->
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% 
+             include widgets/news_card.html limit=site.data.display.homepage.num_news %
+             title='<i class="fas fa-newspaper"></i> Media Coverage'  
+        }
     {% endif %}
 {% endif %}
 
