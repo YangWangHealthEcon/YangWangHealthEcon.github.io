@@ -1,7 +1,7 @@
 ---
 title: "Comparison of Commercial Negotiated Price and Cash Price Between Physician-Owned Hospitals and Other Hospitals in the Same Hospital Referral Region"
 date: 2023-01-01
-selected: true
+selected: false
 pub: "JAMA Network Open"
 pub_date: "2023"
 
