@@ -10,9 +10,9 @@
             <div class="media-body">
                 {% for item in year.items %}
                 <div class="my-1 d-flex align-items-center">
-                   #{% if item.image %}
-                   #<img src="{{ item.image }}" alt="News Image" class="news-media mr-2">
-                   #{% endif %}
+                   # {% if item.image %}
+                   # <img src="{{ item.image }}" alt="News Image" class="news-media mr-2">
+                   # {% endif %}
                    <div class="d-flex flex-column">
                        <span>{{ item.title }}</span> 
                        <a href="{{ item.url }}" class="text-muted ml-1" target="_blank" rel="noopener noreferrer">
