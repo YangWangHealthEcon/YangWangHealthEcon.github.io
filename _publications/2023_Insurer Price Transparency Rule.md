@@ -1,7 +1,7 @@
 ---
 title: "Insurer Price Transparency Rule: What Has Been Disclosed?"
 date: 2023-01-01
-selected: true
+selected: false
 pub: "Health Affairs Forefront"
 pub_date: "2023"
 
