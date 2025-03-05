@@ -8,11 +8,31 @@ permalink: /Price Transparency/
 <h1>A Crash Course in Healthcare Price Transparency</h1>
 <h2>— Data Overview, Research Summary, and Implications for Policymaking and Employer Plans</h2>
 
-<!-- Video Embed -->
-<video width="1280" height="720" controls>
-  <source src="{{ site.baseurl }}/assets/Price_Transparency_CR36.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<style>
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<div class="video-container">
+  <video controls>
+    <source src="{{ site.baseurl }}/assets/Price_Transparency_CR36.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 
 {% for post in site.posts %}
   <div class="post">
