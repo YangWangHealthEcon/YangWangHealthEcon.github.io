@@ -5,20 +5,78 @@ navbar_title: Price Transparency
 permalink: /Price Transparency/
 ---
 
-<h2>A Crash Course in Healthcare Price Transparency</h2>
-<h4>— Data Overview, Research Summary, and Implications for Policymaking and Employer Plans</h4>
+<!-- Link to Google Fonts for clean typography -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-<!-- Video Embed Section -->
+<!-- General Styles for Body and Layout -->
 <style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9; /* Light background for the body */
+    color: #333; /* Text color for better readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2, h4, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Heading color */
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #555;
+  }
+
+  p, ol, ul {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Container for the sections */
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 8px;
+  }
+
   /* Style for the video container */
   .video-container {
     position: relative;
-    max-width: 100%; /* Makes the container fill the available width */
-    width: 70%; /* Limit the video width to 70% of the page's width (adjust as needed) */
-    margin: 0 auto; /* Centers the container horizontally */
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (height: width ratio) */
+    max-width: 100%;
+    width: 70%;
+    margin: 20px auto;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
   /* Style for the video itself */
@@ -26,32 +84,52 @@ permalink: /Price Transparency/
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Make the video scale to the container width */
-    height: 100%; /* Ensure the video takes the full height of the container */
+    width: 100%;
+    height: 100%;
   }
 
   /* Style for expandable sections */
   .expandable-section {
     margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .expandable-header {
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+
+  .expandable-header:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+
+  .expandable-header i {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
   }
 
   .expandable-content {
     display: none;
     padding-left: 20px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #555;
+    margin-top: 10px;
   }
 
-  .expandable-header i {
-    margin-right: 10px;
+  .expandable-header i.open {
+    transform: rotate(45deg); /* Rotating the "+" to make it a "minus" on open */
+  }
+
+  .expandable-header i.close {
+    transform: rotate(0deg); /* Reset to "+" when closed */
   }
 </style>
 
@@ -71,7 +149,7 @@ permalink: /Price Transparency/
   <!-- Section 1: Background -->
   <div class="expandable-section">
     <div class="expandable-header" onclick="toggleSection('background')">
-      <i id="background-icon" class="fas fa-plus"></i>
+      <i id="background-icon" class="fas fa-plus close"></i>
       <h3>Background</h3>
     </div>
     <div id="background" class="expandable-content">
@@ -82,7 +160,7 @@ permalink: /Price Transparency/
   <!-- Section 2: Intended Audience -->
   <div class="expandable-section">
     <div class="expandable-header" onclick="toggleSection('audience')">
-      <i id="audience-icon" class="fas fa-plus"></i>
+      <i id="audience-icon" class="fas fa-plus close"></i>
       <h3>Intended Audience</h3>
     </div>
     <div id="audience" class="expandable-content">
@@ -93,7 +171,7 @@ permalink: /Price Transparency/
   <!-- Section 3: Price Information in This Tool -->
   <div class="expandable-section">
     <div class="expandable-header" onclick="toggleSection('price-info')">
-      <i id="price-info-icon" class="fas fa-plus"></i>
+      <i id="price-info-icon" class="fas fa-plus close"></i>
       <h3>Price Information in This Tool</h3>
     </div>
     <div id="price-info" class="expandable-content">
@@ -104,7 +182,7 @@ permalink: /Price Transparency/
   <!-- Section 4: How to Use This Tool -->
   <div class="expandable-section">
     <div class="expandable-header" onclick="toggleSection('how-to-use')">
-      <i id="how-to-use-icon" class="fas fa-plus"></i>
+      <i id="how-to-use-icon" class="fas fa-plus close"></i>
       <h3>How to Use This Tool</h3>
     </div>
     <div id="how-to-use" class="expandable-content">
@@ -134,20 +212,7 @@ permalink: /Price Transparency/
 
     if (content.style.display === "none" || content.style.display === "") {
       content.style.display = "block";
-      icon.classList.remove('fa-plus');
-      icon.classList.add('fa-minus');
+      icon.classList.remove('fa-plus', 'close');
+      icon.classList.add('fa-minus', 'open');
     } else {
-      content.style.display = "none";
-      icon.classList.remove('fa-minus');
-      icon.classList.add('fa-plus');
-    }
-  }
-
-  // Initially hide all content sections
-  document.addEventListener("DOMContentLoaded", function() {
-    var sections = document.querySelectorAll('.expandable-content');
-    sections.forEach(function(section) {
-      section.style.display = "none";
-    });
-  });
-</script>
+      content
