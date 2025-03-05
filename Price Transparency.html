@@ -8,6 +8,7 @@ permalink: /Price Transparency/
 <h2>A Crash Course in Healthcare Price Transparency</h2>
 <h4>— Data Overview, Research Summary, and Implications for Policymaking and Employer Plans</h4>
 
+<!-- Video Embed Section -->
 <style>
   /* Style for the video container */
   .video-container {
@@ -28,6 +29,30 @@ permalink: /Price Transparency/
     width: 100%; /* Make the video scale to the container width */
     height: 100%; /* Ensure the video takes the full height of the container */
   }
+
+  /* Style for expandable sections */
+  .expandable-section {
+    margin-bottom: 20px;
+  }
+
+  .expandable-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .expandable-content {
+    display: none;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+
+  .expandable-header i {
+    margin-right: 10px;
+  }
 </style>
 
 <!-- Video Embed -->
@@ -38,9 +63,91 @@ permalink: /Price Transparency/
   </video>
 </div>
 
-
-<!-- Second Section -->
+<!-- Second Section: TIC Hospital Price Compare -->
 <div class="section">
   <h2>TIC Hospital Price Compare</h2>
   <h4>— Interactive Maps Comparing Low, Medium, and High Commercial Hospital Prices for States and Metro Areas</h4>
+
+  <!-- Section 1: Background -->
+  <div class="expandable-section">
+    <div class="expandable-header" onclick="toggleSection('background')">
+      <i id="background-icon" class="fas fa-plus"></i>
+      <h3>Background</h3>
+    </div>
+    <div id="background" class="expandable-content">
+      <p>Commercial prices for hospital care are expensive, varying, and opaque. The federal Transparency in Coverage (TIC) Final Rule requires commercial insurers to publicly disclose their negotiated prices. It aims to empower patients and employers to better access, compare, and negotiate prices, and further stimulate competition and improve healthcare affordability.</p>
+    </div>
+  </div>
+
+  <!-- Section 2: Intended Audience -->
+  <div class="expandable-section">
+    <div class="expandable-header" onclick="toggleSection('audience')">
+      <i id="audience-icon" class="fas fa-plus"></i>
+      <h3>Intended Audience</h3>
+    </div>
+    <div id="audience" class="expandable-content">
+      <p>If you are shopping for a new car, you’ll notice that prices for the same make and model vary a lot across dealers in your local area. Similarly, commercial prices for the SAME service delivered at the SAME hospital vary widely across insurance carriers in your local market. If you want to find out the lowest commercial hospital prices in your area, this is the right tool for you.</p>
+    </div>
+  </div>
+
+  <!-- Section 3: Price Information in This Tool -->
+  <div class="expandable-section">
+    <div class="expandable-header" onclick="toggleSection('price-info')">
+      <i id="price-info-icon" class="fas fa-plus"></i>
+      <h3>Price Information in This Tool</h3>
+    </div>
+    <div id="price-info" class="expandable-content">
+      <p>This tool uses commercial prices disclosed by 5 national insurers (Blue Cross Blue Shield, CVS Health, Cigna, Elevance Health, and United Healthcare) for 10 common hospital services (normal delivery, C-section, hip & knee replacement, spinal fusion, PTCA, septicemia, cellulitis, psychoses, colonoscopy, EGD). For each service, this tool shows the lowest, enrollment-weighted average, and highest commercial prices at each of the 38 states and 50 largest metro areas in the US.</p>
+    </div>
+  </div>
+
+  <!-- Section 4: How to Use This Tool -->
+  <div class="expandable-section">
+    <div class="expandable-header" onclick="toggleSection('how-to-use')">
+      <i id="how-to-use-icon" class="fas fa-plus"></i>
+      <h3>How to Use This Tool</h3>
+    </div>
+    <div id="how-to-use" class="expandable-content">
+      <ol>
+        <li>Use the state map for state-level prices, or metro area map for prices of the largest 50 metro areas.</li>
+        <li>Choose the individual hospital service in the filter on the right.</li>
+        <li>Explore the numbers for the state or metro areas you are interested in. In the drop-down list, you will see:
+          <ul>
+            <li>Medicare price</li>
+            <li>The lowest, enrollment-weighted average, and highest commercial prices negotiated across the national insurers participating in that market, shown as percentages of Medicare prices</li>
+            <li>Estimated price savings in percentage, if using the lowest prices (assuming you currently pay the weighted-average prices)</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
 </div>
+
+<!-- Add FontAwesome (for icons) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
+  // Toggle function for expanding/collapsing sections
+  function toggleSection(sectionId) {
+    var content = document.getElementById(sectionId);
+    var icon = document.getElementById(sectionId + '-icon');
+
+    if (content.style.display === "none" || content.style.display === "") {
+      content.style.display = "block";
+      icon.classList.remove('fa-plus');
+      icon.classList.add('fa-minus');
+    } else {
+      content.style.display = "none";
+      icon.classList.remove('fa-minus');
+      icon.classList.add('fa-plus');
+    }
+  }
+
+  // Initially hide all content sections
+  document.addEventListener("DOMContentLoaded", function() {
+    var sections = document.querySelectorAll('.expandable-content');
+    sections.forEach(function(section) {
+      section.style.display = "none";
+    });
+  });
+</script>
