@@ -133,6 +133,10 @@ permalink: /Price Transparency/
   }
 </style>
 
+<div class="section">
+  <h3>A Crash Course in Healthcare Price Transparency</h3>
+  <h6>— Data Overview, Research Summary, and Implications for Policymaking and Employer Plans</h6>
+  
 <!-- Video Embed -->
 <div class="video-container">
   <video controls>
@@ -143,14 +147,14 @@ permalink: /Price Transparency/
 
 <!-- Second Section: TIC Hospital Price Compare -->
 <div class="section">
-  <h2>TIC Hospital Price Compare</h2>
-  <h4>— Interactive Maps Comparing Low, Medium, and High Commercial Hospital Prices for States and Metro Areas</h4>
+  <h3>TIC Hospital Price Compare</h3>
+  <h6>— Interactive Maps Comparing Low, Medium, and High Commercial Hospital Prices for States and Metro Areas</h6>
 
   <!-- Section 1: Background -->
   <div class="expandable-section">
     <div class="expandable-header" onclick="toggleSection('background')">
       <i id="background-icon" class="fas fa-plus close"></i>
-      <h3>Background</h3>
+      <h6>Background</h6>
     </div>
     <div id="background" class="expandable-content">
       <p>Commercial prices for hospital care are expensive, varying, and opaque. The federal Transparency in Coverage (TIC) Final Rule requires commercial insurers to publicly disclose their negotiated prices. It aims to empower patients and employers to better access, compare, and negotiate prices, and further stimulate competition and improve healthcare affordability.</p>
@@ -161,7 +165,7 @@ permalink: /Price Transparency/
   <div class="expandable-section">
     <div class="expandable-header" onclick="toggleSection('audience')">
       <i id="audience-icon" class="fas fa-plus close"></i>
-      <h3>Intended Audience</h3>
+      <h6>Intended Audience</h6>
     </div>
     <div id="audience" class="expandable-content">
       <p>If you are shopping for a new car, you’ll notice that prices for the same make and model vary a lot across dealers in your local area. Similarly, commercial prices for the SAME service delivered at the SAME hospital vary widely across insurance carriers in your local market. If you want to find out the lowest commercial hospital prices in your area, this is the right tool for you.</p>
@@ -172,7 +176,7 @@ permalink: /Price Transparency/
   <div class="expandable-section">
     <div class="expandable-header" onclick="toggleSection('price-info')">
       <i id="price-info-icon" class="fas fa-plus close"></i>
-      <h3>Price Information in This Tool</h3>
+      <h6>Price Information in This Tool</h6>
     </div>
     <div id="price-info" class="expandable-content">
       <p>This tool uses commercial prices disclosed by 5 national insurers (Blue Cross Blue Shield, CVS Health, Cigna, Elevance Health, and United Healthcare) for 10 common hospital services (normal delivery, C-section, hip & knee replacement, spinal fusion, PTCA, septicemia, cellulitis, psychoses, colonoscopy, EGD). For each service, this tool shows the lowest, enrollment-weighted average, and highest commercial prices at each of the 38 states and 50 largest metro areas in the US.</p>
@@ -183,7 +187,7 @@ permalink: /Price Transparency/
   <div class="expandable-section">
     <div class="expandable-header" onclick="toggleSection('how-to-use')">
       <i id="how-to-use-icon" class="fas fa-plus close"></i>
-      <h3>How to Use This Tool</h3>
+      <h6>How to Use This Tool</h6>
     </div>
     <div id="how-to-use" class="expandable-content">
       <ol>
@@ -215,4 +219,18 @@ permalink: /Price Transparency/
       icon.classList.remove('fa-plus', 'close');
       icon.classList.add('fa-minus', 'open');
     } else {
-      content
+      content.style.display = "none";
+      icon.classList.remove('fa-minus', 'open');
+      icon.classList.add('fa-plus', 'close');
+    }
+  }
+
+  // Initially hide all content sections
+  document.addEventListener("DOMContentLoaded", function() {
+    var sections = document.querySelectorAll('.expandable-content');
+    sections.forEach(function(section) {
+      section.style.display = "none";
+    });
+  });
+</script>
+
