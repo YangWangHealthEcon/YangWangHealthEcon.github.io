@@ -6,4 +6,7 @@ pages:
 - name: Publications
   url: /publications
 - name: Price Transparency
-  url: /Price Transparency
+  url: /pricetransparency
+- name: Tool
+  url: /tool
+
