@@ -75,7 +75,7 @@ div.lazy {
 
 <!-- Add this CSS in your style section or external stylesheet -->
 
-  .center-container {
+.center-container {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically centers the content */
@@ -83,9 +83,9 @@ div.lazy {
     height: 100vh; /* Makes the container take up the full height of the viewport */
     text-align: center; /* Centers the text inside the container */
     padding: 20px;
-  }
+}
 
-  .center-container p, .center-container h3, .center-container h6 {
+.center-container p, .center-container h3, .center-container h6 {
     max-width: 800px; /* Optional: limit the width of the content for better readability */
-  }
+}
 
