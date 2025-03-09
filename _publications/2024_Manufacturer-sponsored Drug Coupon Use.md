@@ -2,7 +2,7 @@
 
 title: "Manufacturer-sponsored Drug Coupon Use and Drug-switching Behavior Among Patients with Type 2 Diabetes"
 date: 2024-01-01
-selected: true
+selected: false
 pub: "Journal of Managed Care & Specialty Pharmacy"
 pub_date: "2024"
 
