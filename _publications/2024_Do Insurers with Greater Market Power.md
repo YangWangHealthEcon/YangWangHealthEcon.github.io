@@ -2,7 +2,7 @@
 
 title: "Do Insurers with Greater Market Power Negotiate Consistently Lower Prices for Hospital Care? Evidence from Hospital Price Transparency Data"
 date: 2024-01-01
-selected: true
+selected: false
 pub: "Medical Care Research and Review"
 pub_date: "2024"
 
