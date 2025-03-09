@@ -3,7 +3,6 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     padding-top: 5.0rem;
-    padding-top: 2.0rem;
     font-size: 18px; /* Increased from default (usually 16px) */
 }
 
@@ -72,5 +71,9 @@ div.lazy {
 .education-title {
     font-size: 1.5rem;  /* Adjust size as needed */
     font-weight: bold;
+}
+
+.card-body {
+    padding-bottom: 1.0rem;  /* Decrease padding as needed */
 }
 
