@@ -45,11 +45,11 @@
                             <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
                         {% endif %}
                     </div>
-        
                 </div>
                 <hr />
                 <div class="row">
-                    <div class="col">
+                    <!-- Left column for Contact Links (Email, Google Scholar, etc.) -->
+                    <div class="col-md-6">  
                         {% if site.data.profile.email %}
                         <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}" aria-label="Send an email">
                             <i class="fas fa-envelope"></i> Email
@@ -78,9 +78,11 @@
                             <i class="fab fa-twitter"></i> Twitter
                         </a>
                         {% endif %}
+                    </div> 
 
+                    <!-- Right column for Education -->
+                    <div class="col-md-6">  
                         {% if site.data.profile.education %}
-                        <div class="col-md-12">  <!-- Full-width column -->
                           <div class="mx-2 my-1">
                             <h6 class="education-title">Education</h6>
                             <ul class="list-unstyled mb-1">
@@ -95,15 +97,14 @@
                                 {% endfor %}
                             </ul>
                           </div>
-                        </div>
                         {% endif %}
-
                     </div>
                 </div>
             </div>
         </div>        
     </div>
 </div>
+
 
 <!-- Experience Card -->
 <div class="row mt-3">
