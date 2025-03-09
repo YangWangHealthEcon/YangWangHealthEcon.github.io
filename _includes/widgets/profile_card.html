@@ -49,14 +49,14 @@
                 <hr />
                 <div class="row">
                     <!-- Left column for Contact Links (Email, Google Scholar, etc.) -->
-                    <div class="col-md-4">  
+                    <div class="col-md-3">  
                         
                         <!-- Email Row -->
                         <div class="row">
                             <div class="col-12 py-1">
                                 {% if site.data.profile.email %}
                                 <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}" aria-label="Send an email">
-                                    <i class="fas fa-envelope"></i> Email
+                                    <i class="fas fa-envelope" style="font-size: 0.8rem;"></i> Email
                                 </a>
                                 {% endif %}
                             </div>
@@ -108,7 +108,7 @@
                     </div> 
 
                     <!-- Right column for Education, 2/3 of the column width -->
-                    <div class="col-md-8">  
+                    <div class="col-md-9">  
                         {% if site.data.profile.education %}
                           <div class="mx-2 my-1">
                             <h6 class="education-title">Education</h6>
