@@ -50,34 +50,62 @@
                 <div class="row">
                     <!-- Left column for Contact Links (Email, Google Scholar, etc.) -->
                     <div class="col-md-4">  
-                        {% if site.data.profile.email %}
-                        <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}" aria-label="Send an email">
-                            <i class="fas fa-envelope"></i> Email
-                        </a>
-                        {% endif %}
-                        {% if site.data.profile.facultypage %}
-                        <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.facultypage }}">
-                            <i class="fas fa-university"></i> FacultyPage
-                        </a>
-                        {% endif %}
+                        <h6>Contacts</h6>
                         
-                        {% if site.data.profile.gscholar contains 'scholar.google' %}
-                        <a class="pr-3 no-break" target="_blank" rel="noopener noreferrer" href="{{ site.data.profile.gscholar }}">
-                            <i class="fas fa-graduation-cap"></i> Google Scholar
-                        </a>
-                        {% endif %}
-                        
-                        {% if site.data.profile.linkedin %}
-                        <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.linkedin }}">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        {% endif %}
-                        
-                        {% if site.data.profile.twitter %}
-                        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
-                            <i class="fab fa-twitter"></i> Twitter
-                        </a>
-                        {% endif %}
+                        <!-- Email Row -->
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                {% if site.data.profile.email %}
+                                <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}" aria-label="Send an email">
+                                    <i class="fas fa-envelope"></i> Email
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- Faculty Page Row -->
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                {% if site.data.profile.facultypage %}
+                                <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.facultypage }}">
+                                    <i class="fas fa-university"></i> FacultyPage
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- Google Scholar Row -->
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                {% if site.data.profile.gscholar contains 'scholar.google' %}
+                                <a class="pr-3 no-break" target="_blank" rel="noopener noreferrer" href="{{ site.data.profile.gscholar }}">
+                                    <i class="fas fa-graduation-cap"></i> Google Scholar
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn Row -->
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                {% if site.data.profile.linkedin %}
+                                <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.linkedin }}">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- Twitter Row -->
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                {% if site.data.profile.twitter %}
+                                <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
+                                    <i class="fab fa-twitter"></i> Twitter
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
                     </div> 
 
                     <!-- Right column for Education, 2/3 of the column width -->
