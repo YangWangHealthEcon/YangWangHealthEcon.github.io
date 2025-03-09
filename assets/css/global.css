@@ -77,3 +77,39 @@ div.lazy {
     padding-bottom: 1.0rem;  /* Decrease padding as needed */
 }
 
+.contact-disclaimer {
+  background: linear-gradient(45deg, #ff9a8b, #fecf7e); /* Fun gradient */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-disclaimer a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #ff6f61;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-disclaimer a:hover {
+  background-color: #ff4a3d;
+  transform: translateY(-3px); /* Button lift effect */
+}
+
+.contact-disclaimer .disclaimer {
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+  margin-top: 20px;
+}
+
+.contact-disclaimer a:hover {
+  color: #f79c42;
+  transform: scale(1.1); /* Slight zoom effect */
+  transition: all 0.3s ease;
+}
