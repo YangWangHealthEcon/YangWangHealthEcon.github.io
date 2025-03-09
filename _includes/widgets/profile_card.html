@@ -50,11 +50,10 @@
                 <div class="row">
                     <!-- Left column for Contact Links (Email, Google Scholar, etc.) -->
                     <div class="col-md-4">  
-                        <h6>Contacts</h6>
                         
                         <!-- Email Row -->
-                        <div class="row mb-3">
-                            <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 py-1">
                                 {% if site.data.profile.email %}
                                 <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}" aria-label="Send an email">
                                     <i class="fas fa-envelope"></i> Email
@@ -64,8 +63,8 @@
                         </div>
 
                         <!-- Faculty Page Row -->
-                        <div class="row mb-3">
-                            <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 py-1">
                                 {% if site.data.profile.facultypage %}
                                 <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.facultypage }}">
                                     <i class="fas fa-university"></i> FacultyPage
@@ -75,8 +74,8 @@
                         </div>
 
                         <!-- Google Scholar Row -->
-                        <div class="row mb-3">
-                            <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 py-1">
                                 {% if site.data.profile.gscholar contains 'scholar.google' %}
                                 <a class="pr-3 no-break" target="_blank" rel="noopener noreferrer" href="{{ site.data.profile.gscholar }}">
                                     <i class="fas fa-graduation-cap"></i> Google Scholar
@@ -86,7 +85,7 @@
                         </div>
 
                         <!-- LinkedIn Row -->
-                        <div class="row mb-3">
+                        <div class="row">
                             <div class="col-12">
                                 {% if site.data.profile.linkedin %}
                                 <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.linkedin }}">
@@ -97,8 +96,8 @@
                         </div>
 
                         <!-- Twitter Row -->
-                        <div class="row mb-3">
-                            <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 py-1">
                                 {% if site.data.profile.twitter %}
                                 <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
                                     <i class="fab fa-twitter"></i> Twitter
