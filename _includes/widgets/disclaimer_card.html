@@ -8,36 +8,36 @@
       The information and opinions expressed here are Dr. Wang’s own and not necessarily those of Johns Hopkins University or Arnold Ventures.
     </p>
     
-     {% if site.data.profile.email %}
-       <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}" aria-label="Send an email">
-       <i class="fas fa-envelope"></i> Email
-       </a>
-     {% endif %}
-    
-     {% if site.data.profile.facultypage %}
-       <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.facultypage }}">
-       <i class="fas fa-university"></i> FacultyPage
-       </a>
-     {% endif %}
-                        
-     {% if site.data.profile.gscholar contains 'scholar.google' %}
-       <a class="pr-3 no-break" target="_blank" rel="noopener noreferrer" href="{{ site.data.profile.gscholar }}">
-       <i class="ai ai-google-scholar ai-lg"></i> Google Scholar
-       </a>
-     {% endif %}
-                        
-     {% if site.data.profile.linkedin %}
-       <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.linkedin }}">
-       <i class="fab fa-linkedin"></i> LinkedIn
-       </a>
-     {% endif %}
-                        
-     {% if site.data.profile.twitter %}
-       <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
-       <i class="fab fa-twitter"></i> Twitter
-       </a>
-     {% endif %}   
+  
     </div>
 </div>
 
+<div class="contact-disclaimer">
+  <h5>Contact and Disclaimer</h5>
+  <p>Have questions or just want to connect? I’d love to hear from you! Drop me a message, and let’s chat! You can <a href="index.html">reach out here</a></p>
+  
+  <p class="disclaimer">I really appreciate the funding support from Arnold Ventures, and collaboration from Dr. Ge Bai, Dr. Gerard Anderson, and 
+      members from the Johns Hopkins – Arnold Venture lowering private sector healthcare price grant. 
+    Just a friendly reminder: The opinions and thoughts shared here are mine alone and don't necessarily reflect those of Johns Hopkins University or Arnold Ventures.</p>
+
+  <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}" aria-label="Send an email">
+    <i class="fas fa-envelope"></i> Email
+  </a>
+  
+  <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.facultypage }}">
+    <i class="fas fa-university"></i> FacultyPage
+  </a>
+  
+  <a class="pr-3 no-break" target="_blank" rel="noopener noreferrer" href="{{ site.data.profile.gscholar }}">
+    <i class="ai ai-google-scholar ai-lg"></i> Google Scholar
+  </a>
+  
+  <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.linkedin }}">
+     <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  
+  <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
+    <i class="fab fa-twitter"></i> Twitter
+  </a>
+</div>
 
