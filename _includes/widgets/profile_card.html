@@ -116,10 +116,10 @@
                                 {% for item in site.data.profile.education %}
                                 <li class="mb-2">  <!-- Added spacing between entries -->
                                     <div>
-                                        <div class="small font-weight-bold">{{ item.position }}</div>  <!-- Degree first, bold -->
-                                        <div class="">{{ item.name }}</div>  <!-- University Name -->
+                                        <div class="degree-name" style="font-weight: bold; font-size: 1rem;">{{ item.position }}</div>  <!-- Degree (bold) -->
+                                        <div class="school-name" style="font-size: 1rem; color: #333;">{{ item.name }}</div>  <!-- University Name -->
                                     </div>
-                                    <div class="small text-muted"><em>{{ item.date }}</em></div>  <!-- Date in muted style -->
+                                    <!-- <div class="small text-muted"><em>{{ item.date }}</em></div>  Date in muted style -->
                               </li>
                                 {% endfor %}
                             </ul>
