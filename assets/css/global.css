@@ -104,7 +104,7 @@ div.lazy {
 .contact-disclaimer .disclaimer {
   font-size: 16px;
   font-style: italic;
-  color: #555;
+  # color: #555;
   margin-top: 20px;
 }
 
