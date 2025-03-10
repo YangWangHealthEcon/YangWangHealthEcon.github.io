@@ -102,10 +102,10 @@ div.lazy {
 }
 
 .contact-disclaimer .disclaimer {
-  font-size: 14px;
+  # font-size: 14px;
   font-style: italic;
   # color: #555;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .contact-disclaimer a:hover {
