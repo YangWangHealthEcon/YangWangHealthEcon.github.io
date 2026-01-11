@@ -117,18 +117,30 @@ div.lazy {
 .pub-bookmark-nav {
   background: #ffffff;
   border-left: 4px solid #e9ecef;
-  max-width: 260px;
+  max-width: 280px;
+}
+
+.pub-bookmark-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pub-bookmark-list li {
+  display: block;
 }
 
 .pub-bookmark {
-  display: block;
+  display: block !important;
+  width: 100%;
   padding: 6px 10px;
   margin: 4px 0;
   font-size: 0.85rem;
-  border-radius: 6px;
+  border-radius: 15px; /* pill shape */
   color: #333;
   background: #f6f8fa;
   text-decoration: none;
+  text-align: center;
   transition: all 0.15s ease-in-out;
 }
 
@@ -142,4 +154,5 @@ div.lazy {
   background: #dee2e6;
   font-weight: 600;
 }
+
 
