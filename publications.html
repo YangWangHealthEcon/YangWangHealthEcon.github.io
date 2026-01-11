@@ -6,7 +6,7 @@ body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
 
-{% assign pubs_by_year = site.publications | sort: "date" | reverse %}
+{% assign pubs_sorted = site.publications | sort: "date" | reverse %}
 
 {% for cat in site.data.publication_cat %}
   {% assign cat_name = cat[0] %}
@@ -14,13 +14,16 @@ body_attr: >-
 
   {% assign pubs_in_cat = "" | split: "" %}
 
-  {% for p in pubs_sorted %}
+{% for p in pubs_sorted %}
+    {% assign p_title = p.title | downcase %}
     {% for t in title_list %}
-      {% if p.title contains t %}
+      {% assign t_norm = t | downcase %}
+      {% if p_title contains t_norm or t_norm contains p_title %}
         {% assign pubs_in_cat = pubs_in_cat | push: p %}
       {% endif %}
     {% endfor %}
   {% endfor %}
+
 
   {% if pubs_in_cat.size > 0 %}
     <h1 class="pt-5" id="cat-{{ cat_name | slugify }}">{{ cat_name }}</h1>
