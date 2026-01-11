@@ -8,7 +8,7 @@ body_attr: >-
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 
-<!-- Right-top category navigation as a mini TOC -->
+<!-- Right-top category navigation as book chapter style -->
 <div id="pub-navbar"
      class="position-fixed"
      style="top:90px; right:40px; z-index:1000;">
@@ -27,39 +27,39 @@ body_attr: >-
   </div>
 </div>
 
-
 <div class="container">
 
-{% for cat in site.data.publication_cat %}
-  {% assign cat_name = cat[0] %}
-  {% assign title_list = cat[1] %}
-  {% assign pubs_in_cat = "" | split: "" %}
+  {% for cat in site.data.publication_cat %}
+    {% assign cat_name = cat[0] %}
+    {% assign title_list = cat[1] %}
+    {% assign pubs_in_cat = "" | split: "" %}
 
-  {% for p in pubs %}
-    {% assign p_title = p.title | downcase %}
-    {% for t in title_list %}
-      {% assign t_norm = t | downcase %}
-      {% if p_title contains t_norm %}
-        {% unless pubs_in_cat contains p %}
-          {% assign pubs_in_cat = pubs_in_cat | push: p %}
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-
-  {% if pubs_in_cat.size > 0 %}
-    <!-- Category header (like year) -->
-    <h3 class="pub-category-header" id="cat-{{ cat_name | slugify }}">
-      {{ cat_name }}
-    </h3>
-
-    <!-- Publications list -->
-    <div class="my-3 p-0 bg-white shadow-sm rounded-sm">
-      {% for item in pubs_in_cat %}
-        {% include widgets/publication_item.html item=item %}
+    {% for p in pubs %}
+      {% assign p_title = p.title | downcase %}
+      {% for t in title_list %}
+        {% assign t_norm = t | downcase %}
+        {% if p_title contains t_norm %}
+          {% unless pubs_in_cat contains p %}
+            {% assign pubs_in_cat = pubs_in_cat | push: p %}
+          {% endunless %}
+        {% endif %}
       {% endfor %}
-    </div>
-  {% endif %}
-{% endfor %}
+    {% endfor %}
+
+    {% if pubs_in_cat.size > 0 %}
+      <!-- Category header (clean, like years) -->
+      <h2 class="pub-category-header"
+          id="cat-{{ cat_name | slugify }}">
+        {{ cat_name }}
+      </h2>
+
+      <!-- Publications list -->
+      <div class="my-3 p-0 bg-white shadow-sm rounded-sm">
+        {% for item in pubs_in_cat %}
+          {% include widgets/publication_item.html item=item %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
 
 </div>
