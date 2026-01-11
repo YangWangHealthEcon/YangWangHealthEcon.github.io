@@ -1,3 +1,44 @@
+{% assign item = include.item %}
+
+<div class="border-bottom border-gray px-3 py-2">
+  <div class="d-flex flex-wrap align-items-center">
+
+    <!-- MAIN TEXT: Authors · Journal · Year -->
+    <div class="flex-grow-1 small">
+
+      {% if item.authors %}
+        <span>{{ item.authors | join: ", " }}</span>
+      {% endif %}
+
+      {% if item.pub %}
+        <span class="text-muted"> · <em>{{ item.pub }}</em></span>
+      {% endif %}
+
+      {% if item.date %}
+        <span class="text-muted"> · {{ item.date | date: "%Y" }}</span>
+      {% endif %}
+
+    </div>
+
+    <!-- LINKS -->
+    {% if item.links %}
+    <div class="ml-3 text-nowrap">
+      {% for link in item.links %}
+        {% assign label = link[0] %}
+        {% assign url = link[1] %}
+        <a class="btn btn-sm btn-outline-primary ml-1"
+           href="{{ url | relative_url }}"
+           target="_blank">
+          {{ label }}
+        </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+
+<!--
 {% assign publications = include.publications %}
 <div class="my-3 p-0 bg-white shadow-sm rounded-sm">
     <h6 class="border-bottom border-gray p-3 mb-0">
@@ -11,4 +52,4 @@
         <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
     </h6>
 </div>
-
+-->
