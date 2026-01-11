@@ -12,10 +12,10 @@ body_attr: >-
 <div id="pub-navbar"
      class="position-fixed"
      style="top:90px; right:40px; z-index:1000;">
-  <div class="bg-white shadow-sm rounded p-2">
+  <div class="pub-bookmark-nav shadow-sm rounded p-2">
     {% for cat in site.data.publication_cat %}
       {% assign cat_name = cat[0] %}
-      <a class="d-block small py-1 text-decoration-none"
+      <a class="pub-bookmark"
          href="#cat-{{ cat_name | slugify }}">
         {{ cat_name }}
       </a>
