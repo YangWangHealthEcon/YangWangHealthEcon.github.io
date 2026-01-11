@@ -8,7 +8,7 @@ body_attr: >-
 
 {% assign pubs_by_year = site.publications | sort: "date" | reverse %}
 
-{% for cat in site.data.publication_categories %}
+{% for cat in site.data.publication_cat %}
   {% assign cat_name = cat[0] %}
   {% assign title_list = cat[1] %}
 
