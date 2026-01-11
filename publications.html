@@ -8,7 +8,7 @@ body_attr: >-
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 
-<!-- Right-top category navigation -->
+<!-- Right-top category navigation as pill buttons -->
 <div id="pub-navbar"
      class="position-fixed"
      style="top:90px; right:40px; z-index:1000;">
@@ -36,10 +36,8 @@ body_attr: >-
 
   {% for p in pubs %}
     {% assign p_title = p.title | downcase %}
-
     {% for t in title_list %}
       {% assign t_norm = t | downcase %}
-
       {% if p_title contains t_norm %}
         {% unless pubs_in_cat contains p %}
           {% assign pubs_in_cat = pubs_in_cat | push: p %}
@@ -49,10 +47,14 @@ body_attr: >-
   {% endfor %}
 
   {% if pubs_in_cat.size > 0 %}
-    <h1 class="pt-5" id="cat-{{ cat_name | slugify }}">
+    <!-- Category header (like year) -->
+    <h2 class="pt-5 pb-2 border-bottom border-dark"
+        id="cat-{{ cat_name | slugify }}">
       {{ cat_name }}
-    </h1>
+      <span class="text-muted small">({{ pubs_in_cat.size }})</span>
+    </h2>
 
+    <!-- Publications list -->
     <div class="my-3 p-0 bg-white shadow-sm rounded-sm">
       {% for item in pubs_in_cat %}
         {% include widgets/publication_item.html item=item %}
