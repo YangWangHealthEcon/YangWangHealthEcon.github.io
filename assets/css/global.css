@@ -114,52 +114,54 @@ div.lazy {
   transition: all 0.3s ease;
 }
 
-/* Container like a mini sidebar */
+/* --- Book chapter style nav --- */
 .pub-chapter-nav {
-  background: #007bff;   /* light/dark blue */
+  background: #5bc0de;       /* light blue */
   padding: 1rem;
   border-radius: 0.5rem;
   max-width: 220px;
 }
 
-/* Remove bullets and spacing */
 .pub-chapter-list {
-  list-style: none;
+  list-style: none;           /* remove bullets */
   padding: 0;
   margin: 0;
 }
 
-/* Each chapter item */
 .pub-chapter-list li {
   margin-bottom: 0.5rem;
 }
 
-/* Link style like book chapter */
 .pub-chapter-link {
   display: block;
   padding: 0.5rem 0.8rem;
-  color: #ffffff;        /* white text */
+  color: #ffffff;
   font-weight: 500;
   text-decoration: none;
-  border-left: 3px solid transparent; /* highlight indicator */
-  transition: all 0.2s ease;
+  border-left: 3px solid transparent; /* hover indicator */
   border-radius: 4px;
+  transition: all 0.2s ease;
+  text-align: center;
 }
 
-/* Hover effect like selected chapter */
 .pub-chapter-link:hover {
-  background-color: #0056b3; /* darker blue */
-  border-left: 3px solid #ffffff;
+  background-color: #31a2d1;      /* slightly darker blue */
+  border-left: 3px solid #ffffff; /* indicates hover/current */
   text-decoration: none;
 }
 
-/* Optional: focus / active */
 .pub-chapter-link:focus {
   outline: none;
-  background-color: #004080;
+  background-color: #1d76a7;
   border-left: 3px solid #ffffff;
   font-weight: 600;
 }
 
-
-
+/* --- Category headers --- */
+.pub-category-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
