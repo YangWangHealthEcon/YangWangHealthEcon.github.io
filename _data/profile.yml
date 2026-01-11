@@ -8,10 +8,12 @@ navbar_name: "Yang Wang"
 #    Johns Hopkins Bloomberg School of Public Health
 
 short_bio:
-  Dr. Wang is a health economist and faculty at Johns Hopkins University Bloomberg School of Public Health. 
-  He conducts empirical research on healthcare pricing, health insurance market, and hospital finance in the US. 
-  He is a leading expert on leveraging the hospital and payer disclosed price transparency data to examine the pricing dynamics of health services, 
-  identify factors that drive higher health expenditures, and evaluate policy interventions and industry practices designed to contain spending and promote care access.
+   Dr. Wang is a health economist and faculty at Johns Hopkins University. 
+   He conducts empirical research on healthcare access and reimbursement, 
+   including payment dynamics for hospital & physician care in commercial, Medicare, and Medicaid markets, 
+   hospital finance & government subsidy, and access and affordability of prescription medications. 
+   Leveraging large real-world datasets and causal inference designs, 
+   his research findings inform and support evidence-based policymaking and industry practices that aim to improve care access, efficiency, and contain costs.
 
 email: "ywang406@jhu.edu"
 facultypage: "https://publichealth.jhu.edu/faculty/4431/yang-wang"
