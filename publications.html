@@ -48,11 +48,9 @@ body_attr: >-
 
   {% if pubs_in_cat.size > 0 %}
     <!-- Category header (like year) -->
-    <h2 class="pt-5 pb-2 border-bottom border-dark"
-        id="cat-{{ cat_name | slugify }}">
+    <h3 class="pub-category-header" id="cat-{{ cat_name | slugify }}">
       {{ cat_name }}
-      <span class="text-muted small">({{ pubs_in_cat.size }})</span>
-    </h2>
+    </h3>
 
     <!-- Publications list -->
     <div class="my-3 p-0 bg-white shadow-sm rounded-sm">
