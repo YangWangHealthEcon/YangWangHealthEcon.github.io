@@ -119,7 +119,8 @@ div.lazy {
   background: #5bc0de;       /* light blue */
   padding: 1rem;
   border-radius: 0.5rem;
-  max-width: 220px;
+  max-width: 280px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .pub-chapter-list {
@@ -136,9 +137,9 @@ div.lazy {
   display: block;
   padding: 0.5rem 0.8rem;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
-  border-left: 3px solid transparent; /* hover indicator */
+  border-left: 4px solid transparent; /* hover indicator */
   border-radius: 4px;
   transition: all 0.2s ease;
   text-align: left;
@@ -146,14 +147,14 @@ div.lazy {
 
 .pub-chapter-link:hover {
   background-color: #31a2d1;      /* slightly darker blue */
-  border-left: 3px solid #ffffff; /* indicates hover/current */
+  border-left: 4px solid #ffffff; /* indicates hover/current */
   text-decoration: none;
 }
 
 .pub-chapter-link:focus {
   outline: none;
   background-color: #1d76a7;
-  border-left: 3px solid #ffffff;
+  border-left: 4px solid #ffffff;
   font-weight: 600;
 }
 
