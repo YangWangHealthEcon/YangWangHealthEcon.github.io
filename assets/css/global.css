@@ -141,7 +141,7 @@ div.lazy {
   border-left: 3px solid transparent; /* hover indicator */
   border-radius: 4px;
   transition: all 0.2s ease;
-  text-align: center;
+  text-align: left;
 }
 
 .pub-chapter-link:hover {
