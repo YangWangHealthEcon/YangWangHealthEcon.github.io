@@ -113,3 +113,33 @@ div.lazy {
   transform: scale(1.1); /* Slight zoom effect */
   transition: all 0.3s ease;
 }
+
+.pub-bookmark-nav {
+  background: #ffffff;
+  border-left: 4px solid #e9ecef;
+  max-width: 260px;
+}
+
+.pub-bookmark {
+  display: block;
+  padding: 6px 10px;
+  margin: 4px 0;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  color: #333;
+  background: #f6f8fa;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.pub-bookmark:hover {
+  background: #e9ecef;
+  text-decoration: none;
+}
+
+.pub-bookmark:focus {
+  outline: none;
+  background: #dee2e6;
+  font-weight: 600;
+}
+
