@@ -45,10 +45,13 @@
           <div class="ml-3 text-nowrap">
             {% for link in item.links %}
               {% assign label = link[0] %}
-              {% assign url = link[1] %}
+              {% assign url_obj = link[1] %}
+              {% assign href = url_obj.url | default: url_obj %}
+              {% assign tgt = url_obj.target | default: "_blank" %}
+            
               <a class="btn btn-sm btn-outline-primary ml-1"
-                 href="{% if url.url %}{{ url.url }}{% else %}{{ url }}{% endif %}"
-                 target="{% if url.target %}{{ url.target }}{% else %}_blank{% endif %}">
+                 href="{{ href | relative_url }}"
+                 target="{{ tgt }}">
                 {{ label }}
               </a>
             {% endfor %}
