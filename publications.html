@@ -3,59 +3,58 @@ layout: default
 title: Publications
 navbar_title: Publications
 body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+  data-spy="scroll" data-target="#pub-navbar" data-offset="100"
 ---
 
-{% assign pubs_sorted = site.publications | sort: "date" | reverse %}
+{% assign pubs = site.publications | sort: "date" | reverse %}
 
-<!-- Sticky Top Category Banner -->
-<div class="category-banner sticky-top bg-light py-2 mb-4 d-flex flex-wrap justify-content-start gap-2" style="top: 80px; z-index: 1000;">
-  {% for cat in site.data.publication_cat %}
-    {% assign cat_name = cat[0] %}
-    <a class="btn btn-sm btn-outline-primary" href="#cat-{{ cat_name | slugify }}">{{ cat_name }}</a>
-  {% endfor %}
+<!-- Right-top category navigation -->
+<div id="pub-navbar"
+     class="position-fixed"
+     style="top:90px; right:40px; z-index:1000;">
+  <div class="bg-white shadow-sm rounded p-2">
+    {% for cat in site.data.publication_cat %}
+      {% assign cat_name = cat[0] %}
+      <a class="d-block small py-1 text-decoration-none"
+         href="#cat-{{ cat_name | slugify }}">
+        {{ cat_name }}
+      </a>
+    {% endfor %}
+  </div>
 </div>
 
-<!-- Publications by Category -->
+<div class="container">
+
 {% for cat in site.data.publication_cat %}
   {% assign cat_name = cat[0] %}
   {% assign title_list = cat[1] %}
   {% assign pubs_in_cat = "" | split: "" %}
 
-  {% for p in pubs_sorted %}
+  {% for p in pubs %}
     {% assign p_title = p.title | downcase %}
+
     {% for t in title_list %}
       {% assign t_norm = t | downcase %}
-      {% if p_title contains t_norm or t_norm contains p_title %}
-        {% assign pubs_in_cat = pubs_in_cat | push: p %}
+
+      {% if p_title contains t_norm %}
+        {% unless pubs_in_cat contains p %}
+          {% assign pubs_in_cat = pubs_in_cat | push: p %}
+        {% endunless %}
       {% endif %}
     {% endfor %}
   {% endfor %}
 
   {% if pubs_in_cat.size > 0 %}
-    <h2 class="pt-5" id="cat-{{ cat_name | slugify }}">{{ cat_name }}</h2>
+    <h1 class="pt-5" id="cat-{{ cat_name | slugify }}">
+      {{ cat_name }}
+    </h1>
 
-    <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
+    <div class="my-3 p-0 bg-white shadow-sm rounded-sm">
       {% for item in pubs_in_cat %}
-        <div class="publication-item mb-3 p-3 border-bottom">
-          <strong>{{ item.title }}</strong>
-          <span class="text-muted">({{ item.date | date: "%Y" }})</span><br>
-
-          {% if item.authors %}
-            <em>{{ item.authors | join: ", " }}</em><br>
-          {% endif %}
-
-          {% if item.pub %}
-            {{ item.pub }}<br>
-          {% endif %}
-
-          {% if item.links %}
-            {% for label, url in item.links %}
-              <a href="{{ url }}">{{ label }}</a>{% unless forloop.last %} | {% endunless %}
-            {% endfor %}
-          {% endif %}
-        </div>
+        {% include widgets/publication_item.html item=item %}
       {% endfor %}
     </div>
   {% endif %}
 {% endfor %}
+
+</div>
