@@ -8,16 +8,16 @@ body_attr: >-
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 
-<!-- Right-top category navigation as pill buttons -->
+<!-- Right-top category navigation as a mini TOC -->
 <div id="pub-navbar"
      class="position-fixed"
      style="top:90px; right:40px; z-index:1000;">
-  <div class="pub-bookmark-nav shadow-sm rounded p-2">
-    <ul class="pub-bookmark-list">
+  <div class="pub-chapter-nav shadow-sm rounded p-2">
+    <ul class="pub-chapter-list">
       {% for cat in site.data.publication_cat %}
         {% assign cat_name = cat[0] %}
         <li>
-          <a class="pub-bookmark"
+          <a class="pub-chapter-link"
              href="#cat-{{ cat_name | slugify }}">
             {{ cat_name }}
           </a>
@@ -26,6 +26,7 @@ body_attr: >-
     </ul>
   </div>
 </div>
+
 
 <div class="container">
 
