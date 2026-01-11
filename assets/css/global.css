@@ -114,45 +114,52 @@ div.lazy {
   transition: all 0.3s ease;
 }
 
-.pub-bookmark-nav {
-  background: #ffffff;
-  border-left: 4px solid #e9ecef;
-  max-width: 280px;
+/* Container like a mini sidebar */
+.pub-chapter-nav {
+  background: #007bff;   /* light/dark blue */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 220px;
 }
 
-.pub-bookmark-list {
+/* Remove bullets and spacing */
+.pub-chapter-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.pub-bookmark-list li {
+/* Each chapter item */
+.pub-chapter-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Link style like book chapter */
+.pub-chapter-link {
   display: block;
-}
-
-.pub-bookmark {
-  display: block !important;
-  width: 100%;
-  padding: 6px 10px;
-  margin: 4px 0;
-  font-size: 0.85rem;
-  border-radius: 15px; /* pill shape */
-  color: #333;
-  background: #f6f8fa;
+  padding: 0.5rem 0.8rem;
+  color: #ffffff;        /* white text */
+  font-weight: 500;
   text-decoration: none;
-  text-align: center;
-  transition: all 0.15s ease-in-out;
+  border-left: 3px solid transparent; /* highlight indicator */
+  transition: all 0.2s ease;
+  border-radius: 4px;
 }
 
-.pub-bookmark:hover {
-  background: #e9ecef;
+/* Hover effect like selected chapter */
+.pub-chapter-link:hover {
+  background-color: #0056b3; /* darker blue */
+  border-left: 3px solid #ffffff;
   text-decoration: none;
 }
 
-.pub-bookmark:focus {
+/* Optional: focus / active */
+.pub-chapter-link:focus {
   outline: none;
-  background: #dee2e6;
+  background-color: #004080;
+  border-left: 3px solid #ffffff;
   font-weight: 600;
 }
+
 
 
