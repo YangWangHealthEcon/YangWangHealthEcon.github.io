@@ -1,5 +1,5 @@
 ---
-title: "Commercial Prices for Primary Care Physician Office Visits"
+title: "Commercial Prices for Primary Care Physician Office Visit"
 date: 2025-10-03
 selected: true
 pub: "Journal of General Internal Medicine"
@@ -12,5 +12,5 @@ authors:
   - Ge Bai
   - Gerard Anderson
 links:
-  Paper: assets/publications/2025_Commercial Prices for Primary Care Physician Office Visits.pdf
+  Paper: assets/publications/2025_Commercial Prices for Primary Care Physician Office Visit.pdf
 ---
