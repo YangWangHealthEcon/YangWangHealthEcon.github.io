@@ -7,9 +7,7 @@
     {% else %}
       <i class="fas fa-star"></i> Selected Publications
     {% endif %}
-    <a href="{{ 'publications' | relative_url }}" class="float-right">
-      (view all <i class="fas fa-angle-double-right"></i>)
-    </a>
+    <a href="{{ 'publications' | relative_url }}" class="float-right">(view all <i class="fas fa-angle-double-right"></i>)</a>
   </h6>
 
   {% for item in publications limit:include.limit %}
@@ -23,7 +21,7 @@
             {% for a in item.authors %}
               {% if a == "Yang Wang" %}
                 {% assign formatted_authors = formatted_authors | append: "<strong>Yang Wang</strong>" %}
-              {% else %}
+               {% else %}
                 {% assign formatted_authors = formatted_authors | append: a %}
               {% endif %}
               {% unless forloop.last %}
@@ -47,12 +45,10 @@
           <div class="ml-3 text-nowrap">
             {% for link in item.links %}
               {% assign label = link[0] %}
-              {% assign url_obj = link[1] %}
-              {% assign href = url_obj.url | default: url_obj %}
-              {% assign tgt = url_obj.target | default: "_blank" %}
+              {% assign url = link[1] %}
               <a class="btn btn-sm btn-outline-primary ml-1"
-                 href="{{ href | relative_url }}"
-                 target="{{ tgt }}">
+                 href="{% if url.url %}{{ url.url }}{% else %}{{ url }}{% endif %}"
+                 target="{% if url.target %}{{ url.target }}{% else %}_blank{% endif %}">
                 {{ label }}
               </a>
             {% endfor %}
@@ -67,20 +63,3 @@
     <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
   </h6>
 </div>
-
-
-<!--
-{% assign publications = include.publications %}
-<div class="my-3 p-0 bg-white shadow-sm rounded-sm">
-    <h6 class="border-bottom border-gray p-3 mb-0">
-        {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected Recent Publications{% endif %} 
-        <a href="{{ 'publications' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
-    </h6>
-    {% for item in publications limit:include.limit %}
-        {% include widgets/publication_item.html item=item first=false last=false %}    
-    {% endfor %}
-    <h6 class="d-block p-3 mt-0 text-right">
-        <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
-    </h6>
-</div>
--->
