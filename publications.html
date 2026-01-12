@@ -5,12 +5,6 @@ navbar_title: Publications
 body_attr: >-
   data-spy="scroll" data-target="#pub-navbar" data-offset="100"
 ---
-<p>Total publications: {{ site.publications | size }}</p>
-<ul>
-{% for p in site.publications %}
-  <li>{{ p.title }} ({{ p.date }})</li>
-{% endfor %}
-</ul>
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 
