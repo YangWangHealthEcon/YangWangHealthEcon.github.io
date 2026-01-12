@@ -11,5 +11,5 @@ authors:
   - Christopher Whaley
   - Ge Bai
 links:
-  Paper: assets/publications/2025_Sharp Rise In Urban Hospitals With Rural Status In Medicare.pdf
+  Paper: assets/publications/2025_Sharp Rise In Urban Hospitals With Rural Status In Medicare, 2017–23.pdf
 ---
