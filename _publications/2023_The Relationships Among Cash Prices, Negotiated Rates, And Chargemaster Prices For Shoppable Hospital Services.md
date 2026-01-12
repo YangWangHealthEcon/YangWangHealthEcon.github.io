@@ -1,7 +1,7 @@
 ---
 title:          "The Relationships Among Cash Prices, Negotiated Rates, And Chargemaster Prices For Shoppable Hospital Services"
 date:           2023-04-01 
-selected:       false
+selected:       true
 pub:            "Health Affairs"
 pub_date:       "2023"
 
