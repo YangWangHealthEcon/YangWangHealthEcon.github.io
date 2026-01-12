@@ -7,7 +7,9 @@
     {% else %}
       <i class="fas fa-star"></i> Selected Publications
     {% endif %}
-    <a href="{{ 'publications' | relative_url }}" class="float-right">(view all <i class="fas fa-angle-double-right"></i>)</a>
+    <a href="{{ 'publications' | relative_url }}" class="float-right">
+      (view all <i class="fas fa-angle-double-right"></i>)
+    </a>
   </h6>
 
   {% for item in publications limit:include.limit %}
@@ -48,7 +50,6 @@
               {% assign url_obj = link[1] %}
               {% assign href = url_obj.url | default: url_obj %}
               {% assign tgt = url_obj.target | default: "_blank" %}
-            
               <a class="btn btn-sm btn-outline-primary ml-1"
                  href="{{ href | relative_url }}"
                  target="{{ tgt }}">
@@ -66,7 +67,6 @@
     <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
   </h6>
 </div>
-
 
 
 <!--
