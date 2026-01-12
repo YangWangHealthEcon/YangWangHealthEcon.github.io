@@ -1,6 +1,6 @@
 ---
 title: "Commercial Prices for Primary Care Physician Office Visits"
-date: 2025-01-01
+date: 2025-10-03
 selected: true
 pub: "Journal of General Internal Medicine"
 pub_date: "2025"
