@@ -11,7 +11,7 @@ authors:
   - Elyette Lugo
   - Yang Wang
   - Ge Bai
-  - Amit Jain. 
+  - Amit Jain
 links:
   Paper: assets/publications/2025_Size, Not Quality and Performance, Influences Commercial Prices.pdf
 ---
