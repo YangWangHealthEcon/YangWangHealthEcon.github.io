@@ -12,7 +12,7 @@ body_attr: >-
   <div class="row">
 
     <!-- LEFT PANEL: All publications -->
-    <div class="col-12 col-lg-9">
+    <div class="col-12 col-lg-10">
 
       {% for cat in site.data.publication_cat %}
         {% assign cat_name = cat[0] %}
@@ -45,7 +45,7 @@ body_attr: >-
     </div>
 
     <!-- RIGHT PANEL: Category navigation -->
-    <div class="col-lg-3 d-none d-lg-block ">
+    <div class="col-lg-2 d-none d-lg-block ">
       <div id="pub-navbar" class="pub-chapter-nav shadow-sm rounded p-3" style="position: fixed; top: 90px; max-width: 220px;">
         <ul class="pub-chapter-list">
           {% for cat in site.data.publication_cat %}
