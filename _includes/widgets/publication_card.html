@@ -26,3 +26,43 @@
                 {% else %}
                   {{ a }}
                 {% endif %}
+                {% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            {% endcapture %}
+            <span>{{ formatted_authors | strip }}</span>
+          {% endif %}
+
+          {% if item.pub %}
+            <span class="text-muted mx-1">·</span><em>{{ item.pub }}</em>
+          {% endif %}
+
+          {% if item.date %}
+            <span class="text-muted mx-1">·</span>{{ item.date | date: "%Y" }}
+          {% endif %}
+        </div>
+
+        <!-- LINKS -->
+        {% if item.links %}
+          <div class="ml-3 text-nowrap">
+            {% for link in item.links %}
+              {% assign label = link[0] %}
+              {% assign url = link[1] %}
+              <a class="btn btn-sm btn-outline-primary ml-1"
+                 href="{% if url.url %}{{ url.url }}{% else %}{{ url }}{% endif %}"
+                 target="{% if url.target %}{{ url.target }}{% else %}_blank{% endif %}">
+                {{ label }}
+              </a>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+  {% endfor %}
+
+  <h6 class="d-block p-3 mt-0 text-right">
+    <a href="{{ 'publications' | relative_url }}">
+      All publications <i class="fas fa-angle-double-right"></i>
+    </a>
+  </h6>
+</div>
