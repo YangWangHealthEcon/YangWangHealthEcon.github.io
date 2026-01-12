@@ -17,18 +17,17 @@
         <!-- MAIN TEXT: Authors · Journal · Year -->
         <div class="flex-grow-1 small text-truncate">
           {% if item.authors %}
-            {% assign formatted_authors = "" %}
-            {% for a in item.authors %}
-              {% if a == "Yang Wang" %}
-                {% assign formatted_authors = formatted_authors | append: "<strong>Yang Wang</strong>" %}
-               {% else %}
-                {% assign formatted_authors = formatted_authors | append: a %}
-              {% endif %}
-              {% unless forloop.last %}
-                {% assign formatted_authors = formatted_authors | append: ", " %}
-              {% endunless %}
-            {% endfor %}
-            <span>{{ formatted_authors | raw }}</span>
+            {% capture formatted_authors %}
+              {% for a in item.authors %}
+                {% if a == "Yang Wang" %}
+                  <strong>Yang Wang</strong>
+                {% else %}
+                  {{ a }}
+                {% endif %}
+                {% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            {% endcapture %}
+            <span>{{ formatted_authors | strip }}</span>
           {% endif %}
 
           {% if item.pub %}
