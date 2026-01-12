@@ -18,6 +18,10 @@
 
         <!-- MAIN TEXT: Authors · Journal · Year -->
         <div class="flex-grow-1 small text-truncate">
+          {% if item.title %}
+            <strong>{{ item.title }}</strong>
+          {% endif %}
+          
           {% if item.authors %}
             {% capture formatted_authors %}
               {% for a in item.authors %}
