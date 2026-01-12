@@ -1,0 +1,17 @@
+---
+title: "Size, Not Hospital Quality and Performance, Influences Commercial Prices: Evidence from Total Joint Arthroplasty"
+date: 2025-10-01
+selected: false
+pub: "Journal of Bone and Joint Surgery Open Access"
+pub_date: "2025"
+
+authors:
+  - Andrew Harris
+  - Jonathan Wang
+  - Elyette Lugo
+  - Yang Wang
+  - Ge Bai
+  - Amit Jain. 
+links:
+  Paper: assets/publications/2025_Size, Not Hospital Quality and Performance, Influences Commercial Prices: Evidence from Total Joint Arthroplasty.pdf
+---
