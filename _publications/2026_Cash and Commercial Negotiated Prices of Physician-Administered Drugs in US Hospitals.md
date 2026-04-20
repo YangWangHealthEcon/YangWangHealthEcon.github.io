@@ -1,7 +1,7 @@
 ---
 title: "Cash and Commercial Negotiated Prices of Physician-Administered Drugs in US Hospitals"
 date: 2026-03-01
-selected: true
+selected: false
 pub: "American Journal of Managed Care"
 pub_date: "2026"
 
