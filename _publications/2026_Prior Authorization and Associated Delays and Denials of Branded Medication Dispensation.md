@@ -11,5 +11,5 @@ authors:
   - T. Joseph Mattingly II
   - Gerard Anderson
 links:
-  Paper: assets/publications/2025_Size, Not Quality and Performance, Influences Commercial Prices.pdf
+  Paper: assets/publications/2026_Prior Authorization and Associated Delays and Denials of Branded Medication Dispensation.pdf
 ---
