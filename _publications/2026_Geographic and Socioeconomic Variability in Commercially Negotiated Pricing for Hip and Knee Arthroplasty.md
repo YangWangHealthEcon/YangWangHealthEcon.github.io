@@ -12,8 +12,7 @@ authors:
   - Wenyu Yang
   - Yang Wang
   - Savyasachi C Thakkar
-  - Amit Jain
-
+  - Amit Jain 
 links:
   Paper: assets/publications/2026_Geographic and Socioeconomic Variability in Commercially Negotiated Pricing for Hip and Knee Arthroplasty.pdf
 ---
