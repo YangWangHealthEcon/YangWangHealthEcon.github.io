@@ -2,7 +2,7 @@
 ---
 title: "Geographic and Socioeconomic Variability in Commercially Negotiated Pricing for Hip and Knee Arthroplasty"
 date: 2026-01-11
-selected:false
+selected: false
 pub: "JBJS Open Access
 pub_date: "2026"
 
